@@ -27,7 +27,26 @@ int main() {
     float densidadePopulacional2;
     float PIBperCapita2;
     float SuperPoder2;
-
+    /*
+    Infomarções das cartas para serem adicionadas
+    Carta 1:
+    Estado: A
+    Código: A01
+    Nome da Cidade: São Paulo
+    População: 12325000
+    Área: 1521.11 km²
+    PIB: 699280000000 bilhões de reais
+    Número de Pontos Turísticos: 50
+ 
+    Carta 2:
+    Estado: B
+    Código: B02
+    Nome da Cidade: Rio de Janeiro
+    População: 6748000
+    Área: 1200.25 km²
+    PIB: 300500000000 bilhões de reais
+    Número de Pontos Turísticos: 30 
+    */
     printf("Vamos registrar a sua primeira carta!\n");
     // Solicita os dados da primeira carta do usuário
     printf("Estado: ");
