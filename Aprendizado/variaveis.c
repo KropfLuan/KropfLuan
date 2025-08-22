@@ -39,6 +39,11 @@ int main() {
     %e - notação científica
     %c - 1 único caractere
     %s - string (sequência de caracteres)
+    %u - inteiro sem sinal (positivo)
+    %ld - long int (inteiro maior)
+    %lld - long long int (inteiro ainda maior)
+    %Lf - long double (ponto flutuante com ainda maior precisão)
+    %hd - short int (inteiro menor)
     */
     printf("Qual é o seu nome? ");
     scanf("%s", nome);
