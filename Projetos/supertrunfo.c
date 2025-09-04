@@ -70,14 +70,14 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos1);
 
-    // Calcula a densidade populacional e o PIB per capita
+    // Calcula a densidade populacional, PIB per capita e o Super Poder da primeira carta
     densidadePopulacional1 = (float) (populacao1 / Área1);
     PIBperCapita1 = (float) PIB1 / populacao1;
-    //Calcula o Super Poder como a soma dos atributos
     SuperPoder1 = (float) populacao1 + Área1 + PIB1 + pontosTuristicos1;
     
     
     printf("Sua carta foi registrada com sucesso!\n");
+
 // Solicita os dados da segunda carta do usuário
     printf("Agora vamos registrar a segunda carta\n");
     printf("Estado: ");
@@ -101,10 +101,9 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &pontosTuristicos2);
 
-    // Calcula a densidade populacional e o PIB per capita
+    // Calcula a densidade populacional, PIB per capita e o Super Poder da segunda carta
     densidadePopulacional2 = (float) populacao2 / Área2;
     PIBperCapita2 = (float) PIB2 / populacao2;
-    //Calcula o Super Poder como a soma dos atributos
     SuperPoder2 = (float) populacao2 + Área2 + PIB2 + pontosTuristicos2;
     
     printf("\nSua carta foi registrada com sucesso!\n");
@@ -135,16 +134,11 @@ int main() {
     printf("Super Poder: %f\n", SuperPoder2);
 
     // Compara os Super Poderes das cartas
-    printf("\nComparação das cartas:\n");
-    printf("População: Carta 1 venceu %d\n", populacao1 > populacao2);
-    printf("Área: Carta 1 venceu %d\n", Área1 > Área2);
-    printf("PIB: Carta 1 venceu %d\n", PIB1 > PIB2);
-    printf("Pontos turísticos: Carta 1 venceu %d\n", 
-        pontosTuristicos1 > pontosTuristicos2);
-    printf("Densidade Populacional: Carta 2 venceu %d\n", densidadePopulacional1 < densidadePopulacional2);
-        // Densidade populacional, quem tem a menor ganha
-    printf("PIB er Capita: Carta 1 venceu %d\n", PIBperCapita1 > PIBperCapita2);
-    printf("Super Poder: Carta 1 venceu %d\n", SuperPoder1 > SuperPoder2);
+    if (populacao1 > populacao2) {
+        printf("\nCarta 1 - São Paulo (SP):\n", populacao1);
+        printf("Carta 2 - Rio de Janeiro (RJ): \n", populacao2);
+        printf("Resultado: Carta 1 (São Paulo) venceu!\n");
+    }
 
     printf("\nObrigado por jogar Super Trunfo!\n");
     
